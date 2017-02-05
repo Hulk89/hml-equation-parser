@@ -124,7 +124,7 @@ def replaceAllMatrix(eqString: str) -> str:
 
                 if matElem['removeOutterBrackets'] == True:
                     bStart, bEnd = _findOutterBrackets(eqString, cursor)
-                    beforeMat = eqString[0:bStart]
+                    beforeMat = eqString[0:cursor]
                     afterMat = eqString[bEnd:]
                 else:
                     beforeMat = eqString[0:cursor]
